@@ -28,11 +28,12 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "cross-env PUBLIC_URL=/STSocietyOitaConference/top react-scripts build",
+    "build": "cross-env PUBLIC_URL=/STSocietyOitaConference/ react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "deploy": "npm run build && gh-pages -d build"
   },
+  "homepage": "https://github.com/STSocietyOitaConference/top.git",
   "eslintConfig": {
     "extends": [
       "react-app",
