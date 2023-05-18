@@ -1,6 +1,5 @@
 import { Grid, ListItemText, CardMedia } from "@mui/material";
-import PosterImage1 from "../assets/poster/sample_640x480.png";
-import PosterImage2 from "../assets/poster/sample2.jpg";
+import PosterImage from "../assets/poster/sample2.jpg";
 import { Box } from "@mui/system";
 
 function Title() {
@@ -54,7 +53,7 @@ function Title() {
         <Grid className="animate__animated animate__fadeIn animate__delay-2s">
           <CardMedia
             component="img"
-            image={PosterImage2}
+            image={PosterImage}
             title={"学会ポスター"}
           />
         </Grid>
