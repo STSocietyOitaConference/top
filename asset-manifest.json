@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/STSocietyOitaConference/top/static/css/main.0b79e6dd.css",
-    "main.js": "/STSocietyOitaConference/top/static/js/main.dba00d9d.js",
-    "static/js/787.1cf49e89.chunk.js": "/STSocietyOitaConference/top/static/js/787.1cf49e89.chunk.js",
-    "static/media/sampleImage_cat.jpg": "/STSocietyOitaConference/top/static/media/sampleImage_cat.9afbea18baf5067ec1d0.jpg",
-    "static/media/sample2.jpg": "/STSocietyOitaConference/top/static/media/sample2.6b11a30632e85cfcf95b.jpg",
-    "static/media/sampleImage_dog.jpg": "/STSocietyOitaConference/top/static/media/sampleImage_dog.94a360199aab90b17f1f.jpg",
-    "index.html": "/STSocietyOitaConference/top/index.html",
-    "main.0b79e6dd.css.map": "/STSocietyOitaConference/top/static/css/main.0b79e6dd.css.map",
-    "main.dba00d9d.js.map": "/STSocietyOitaConference/top/static/js/main.dba00d9d.js.map",
-    "787.1cf49e89.chunk.js.map": "/STSocietyOitaConference/top/static/js/787.1cf49e89.chunk.js.map"
+    "main.css": "/STSocietyOitaConference/static/css/main.0b79e6dd.css",
+    "main.js": "/STSocietyOitaConference/static/js/main.841fb789.js",
+    "static/js/787.1cf49e89.chunk.js": "/STSocietyOitaConference/static/js/787.1cf49e89.chunk.js",
+    "static/media/sampleImage_cat.jpg": "/STSocietyOitaConference/static/media/sampleImage_cat.9afbea18baf5067ec1d0.jpg",
+    "static/media/sample2.jpg": "/STSocietyOitaConference/static/media/sample2.6b11a30632e85cfcf95b.jpg",
+    "static/media/sampleImage_dog.jpg": "/STSocietyOitaConference/static/media/sampleImage_dog.94a360199aab90b17f1f.jpg",
+    "index.html": "/STSocietyOitaConference/index.html",
+    "main.0b79e6dd.css.map": "/STSocietyOitaConference/static/css/main.0b79e6dd.css.map",
+    "main.841fb789.js.map": "/STSocietyOitaConference/static/js/main.841fb789.js.map",
+    "787.1cf49e89.chunk.js.map": "/STSocietyOitaConference/static/js/787.1cf49e89.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0b79e6dd.css",
-    "static/js/main.dba00d9d.js"
+    "static/js/main.841fb789.js"
   ]
 }
