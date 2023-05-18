@@ -10,40 +10,6 @@ import {
 import { useInView } from "react-intersection-observer";
 import "animate.css";
 
-const myStyleText = {
-  "& .MuiInputBase-input": {
-    color: "#6f5b41", // 入力文字の色
-  },
-  width: { sm: 200, md: 500 },
-};
-const myStyleMultiTextSmall = {
-  "& .MuiInputBase-input": {
-    color: "#6f5b41", // 入力文字の色
-  },
-  display: { xs: "block", sm: "none" },
-};
-const myStyleMultiTextLarge = {
-  "& .MuiInputBase-input": {
-    color: "#6f5b41", // 入力文字の色
-  },
-  display: { xs: "none", sm: "block" },
-};
-const myStyleBox = {
-  width: { sm: 200, md: 500 },
-};
-const myStyleButtonSmall = {
-  "&:hover": {
-    backgroundColor: "#fbae49",
-  },
-  display: { xs: "block", sm: "none" },
-};
-const myStyleButtonLarge = {
-  "&:hover": {
-    backgroundColor: "#fbae49",
-  },
-  display: { xs: "none", sm: "block" },
-};
-
 function Inquiry() {
   const { ref, inView } = useInView({
     // オプション
