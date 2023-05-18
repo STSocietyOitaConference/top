@@ -24,7 +24,6 @@ import {
   Grid,
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
-import { useInView } from "react-intersection-observer";
 
 const drawerWidth = 240;
 interface Props {

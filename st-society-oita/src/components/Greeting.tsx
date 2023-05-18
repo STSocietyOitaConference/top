@@ -1,4 +1,4 @@
-import { Grid, Typography, Card, CardMedia } from "@mui/material";
+import { Grid, Typography } from "@mui/material";
 import React from "react";
 import { useInView } from "react-intersection-observer";
 import "animate.css";

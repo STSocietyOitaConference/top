@@ -1,11 +1,10 @@
 import React from "react";
 import { Typography, CardMedia, Grid, Link, Box } from "@mui/material";
-import SampleImage1 from "../assets/advertisement/sample1.jpg";
 import SampleImage2 from "../assets/advertisement/banner_sample.png";
 import { useInView } from "react-intersection-observer";
 import "animate.css";
 function Advertisement() {
-  const { ref, inView } = useInView({
+  const { ref } = useInView({
     // オプション
     rootMargin: "-50px", // ref要素が現れてから50px過ぎたら
     triggerOnce: true, // 最初の一度だけ実行

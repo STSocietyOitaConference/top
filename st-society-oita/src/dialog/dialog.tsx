@@ -1,8 +1,6 @@
 import React from "react";
 import { Dialog, DialogContent } from "@mui/material";
 import PropTypes from "prop-types";
-import SampleImage1 from "../dawnload/image0.jpg";
-import SampleImage2 from "../dawnload/gdApple1.png";
 
 const dialog = (props: any) => {
   const compProps = {

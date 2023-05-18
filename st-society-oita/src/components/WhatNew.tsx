@@ -27,7 +27,7 @@ const informations = [
   [formatDate(20231231), "今日の天気は晴れです"],
 ];
 function WhatNew() {
-  const { ref, inView } = useInView({
+  const { ref } = useInView({
     // オプション
     rootMargin: "-200px", // ref要素が現れてから50px過ぎたら
     triggerOnce: true, // 最初の一度だけ実行

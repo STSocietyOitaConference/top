@@ -1,7 +1,6 @@
 import React from "react";
 import YouTube, { YouTubeProps } from "react-youtube";
-import tubeStyle from "../css/Youtube.module.css";
-import { Grid, Typography, Link } from "@mui/material";
+import { Grid, Typography } from "@mui/material";
 import { useInView } from "react-intersection-observer";
 import "animate.css";
 
