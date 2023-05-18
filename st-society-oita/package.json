@@ -33,7 +33,7 @@
     "eject": "react-scripts eject",
     "deploy": "npm run build && gh-pages -d build"
   },
-  "homepage": "https://github.com/STSocietyOitaConference/top.git",
+  "homepage": "./",
   "eslintConfig": {
     "extends": [
       "react-app",
