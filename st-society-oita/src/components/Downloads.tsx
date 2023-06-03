@@ -80,7 +80,7 @@ function Downloads() {
                             component="label"
                           >
                             <Link
-                              href="../download/regist_exhibition_or_advertisement.pdf"
+                              href="https://drive.google.com/uc?export=download&id=1wnIt0CCwJ91WPr8hgpdqSZ2TrFR1MfpN"
                               download="展示・広告掲載 申込用紙.pdf"
                             >
                               <FileDownloadOutlinedIcon />

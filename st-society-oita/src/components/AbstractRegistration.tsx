@@ -54,7 +54,7 @@ function AbstractRegistration() {
               <Grid item>
                 <Button variant="contained" size="large">
                   <Link
-                    href="../download/submissionGuidelines.pdf"
+                    href="https://drive.google.com/uc?export=download&id=1z1rzUYR1sXOgIpXwB4NZmV0sfuQpUITJ"
                     download="演題募集要項.pdf"
                   >
                     <Typography style={{ color: "white" }}>
