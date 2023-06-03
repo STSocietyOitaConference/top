@@ -20,11 +20,11 @@ function formatDate(inputDate: any) {
   return formatday;
 }
 const informations = [
-  [formatDate(20230312), "今日は晴れです。"],
-  [formatDate(20230311), "明日は台風です。非常時に備えましょう。"],
-  [formatDate(20230310), "今日は曇りです。"],
-  [formatDate(20230309), "今日の天気は雨です。傘をお持ちください。"],
-  [formatDate(20231231), "今日の天気は晴れです"],
+  [formatDate(20230601), "ホームページを公開いたしました。"],
+  [
+    formatDate(20230530),
+    "ただいまサイトの準備中です。今しばらくお待ちください。",
+  ],
 ];
 function WhatNew() {
   const { ref } = useInView({

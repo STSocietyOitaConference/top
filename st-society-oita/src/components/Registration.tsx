@@ -46,25 +46,16 @@ function Registration() {
             alignItems="canter" //左寄せよせの場合はflex-start
           >
             <Typography variant="h6" color="secondary">
-              演題登録期間：2023/2/10 ～2023/3/10
+              演題登録期間：未定
             </Typography>
           </Grid>
           <Grid item>
             <Grid container>
-              <Grid item mr={"5vw"}>
+              <Grid>
                 <Button variant="contained" size="large">
                   <Link href="src\dawnload\img.png" download="img.png">
                     <Typography style={{ color: "white" }}>
                       ダウンロード
-                    </Typography>
-                  </Link>
-                </Button>
-              </Grid>
-              <Grid item>
-                <Button variant="contained" size="large">
-                  <Link href="src\dawnload\img.png" download="img.png">
-                    <Typography style={{ color: "white" }}>
-                      登録フォーム
                     </Typography>
                   </Link>
                 </Button>

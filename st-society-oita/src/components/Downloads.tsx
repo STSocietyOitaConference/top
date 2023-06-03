@@ -8,17 +8,17 @@ import {
   ListItemText,
   IconButton,
   Box,
+  Link,
 } from "@mui/material";
 import FileDownloadOutlinedIcon from "@mui/icons-material/FileDownloadOutlined";
 import { useInView } from "react-intersection-observer";
 import "animate.css";
 
 const dowonloadInfo = [
-  ["ダウンロードファイル名1", "備考1"],
-  ["ダウンロードファイル名2", "備考2"],
-  ["ダウンロードファイル名3", "備考3"],
-  ["ダウンロードファイル名4", "備考4"],
-  ["ダウンロードファイル名5", "備考5"],
+  [
+    "展示・広告掲載 申込用紙",
+    "展示・広告掲載用の申込用紙がダウンロードできます。",
+  ],
 ];
 function Downloads() {
   const { ref, inView } = useInView({
@@ -27,7 +27,7 @@ function Downloads() {
     triggerOnce: true, // 最初の一度だけ実行
   });
   return (
-    <Box id="item_8" ref={ref} className="Downloads">
+    <Box id="item_3" ref={ref} className="Downloads">
       <Grid
         className="animate__animated animate__fadeInUp"
         container
@@ -45,7 +45,7 @@ function Downloads() {
         </Grid>
         <Grid item>
           <Box component={"div"}>
-            <Grid container justifyContent="space-between" mx="auto">
+            <Grid container mx="auto">
               {dowonloadInfo.map((item: any, _index) => {
                 return (
                   <ListItem disablePadding key={_index}>
@@ -73,14 +73,18 @@ function Downloads() {
                             />
                           </Box>
                         </Grid>
-
                         <Grid item>
                           <IconButton
                             color="primary"
                             aria-label="upload picture"
                             component="label"
                           >
-                            <FileDownloadOutlinedIcon />
+                            <Link
+                              href="../download/regist_exhibition_or_advertisement.pdf"
+                              download="展示・広告掲載 申込用紙.pdf"
+                            >
+                              <FileDownloadOutlinedIcon />
+                            </Link>
                           </IconButton>
                         </Grid>
                       </Grid>

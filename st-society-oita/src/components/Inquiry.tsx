@@ -18,7 +18,7 @@ function Inquiry() {
   });
 
   return (
-    <Box id="item_9" className="Inquiry" style={{ height: "50vh" }} ref={ref}>
+    <Box id="item_4" className="Inquiry" style={{ height: "50vh" }} ref={ref}>
       {inView && (
         <Grid
           container
@@ -50,13 +50,15 @@ function Inquiry() {
             alignItems="canter" //左寄せよせの場合はflex-start
           >
             <Typography variant="h6" color="secondary">
-              ***@gmail.com
+              2024.9510.oita@gmail.com
             </Typography>
           </Grid>
           <Grid item>
             <Button variant="contained" size="large">
-              <Link href="src\dawnload\img.png" download="img.png">
-                <Typography style={{ color: "white" }}>ダウンロード</Typography>
+              <Link href="mailto:2024.9510.oita@gmail.com?subject=大会についての問い合わせ">
+                <Typography style={{ color: "white" }}>
+                  お問い合わせを送る
+                </Typography>
               </Link>
             </Button>
           </Grid>

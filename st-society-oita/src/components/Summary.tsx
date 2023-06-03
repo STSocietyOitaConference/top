@@ -34,41 +34,7 @@ function Summary() {
             alignItems="flex-start"
             md={8}
           >
-            <Typography color="secondary">
-              ・市民講座
-              <br />
-              　　「最近の天気について」
-            </Typography>
-
-            <Typography color="secondary">
-              ・シンポジウム➀
-              <br />
-              　　「非常時の対策」
-            </Typography>
-
-            <Typography color="secondary">
-              ・シンポジウム⓶
-              <br />
-              　　「ハザードマップ」
-            </Typography>
-
-            <Typography color="secondary">
-              ・Web教育講演
-              <br />
-              　　「自転車の運転方法」
-            </Typography>
-
-            <Typography color="secondary">
-              ・Web教育講演
-              <br />
-              　　「プログラミングについて」
-            </Typography>
-
-            <Typography color="secondary">
-              ・一般演題・ポスター発表・共催セミナー　他
-              <br />
-              　ウォーキング講座についても紹介！！
-            </Typography>
+            <Typography color="secondary">後日記載</Typography>
           </Grid>
         </Grid>
       )}

@@ -1,6 +1,7 @@
-import { Grid, Typography } from "@mui/material";
+import { Grid, Typography, CardMedia } from "@mui/material";
 import React from "react";
 import { useInView } from "react-intersection-observer";
+import ConferencePresident from "../assets/greeting/conferencePresident.jpg";
 import "animate.css";
 import { Box } from "@mui/system";
 
@@ -14,7 +15,7 @@ function Greeting() {
     <Box ref={ref} className="Greeting">
       {inView && (
         <Grid
-          id="item_2"
+          id="item_1"
           className="animate__animated animate__fadeInUp"
           container
           flexDirection="column"
@@ -24,7 +25,7 @@ function Greeting() {
           mb={6}
         >
           <Grid item xs={12} md={6} mb={3}>
-            <Typography variant="h4">会長挨拶</Typography>
+            <Typography variant="h4">大会長挨拶</Typography>
           </Grid>
           <Grid
             item
@@ -33,36 +34,69 @@ function Greeting() {
             alignItems="flex-end"
             mb={3}
           >
-            <Typography
-              sx={{
-                display: { xs: "none", sm: "block" },
-              }}
-              variant="subtitle1"
-              color="secondary"
-            >
-              大会名
-            </Typography>
-            <Typography variant="subtitle1" color="secondary">
-              大会長　〇〇〇〇
-            </Typography>
-            <Typography
-              sx={{
-                display: { xs: "none", sm: "none" },
-              }}
-              variant="subtitle1"
-              color="secondary"
-            >
-              （独立行政法人　国立病院機構　福岡東医療センター）
-            </Typography>
+            <Box>
+              <Grid
+                id="item_2"
+                className="animate__animated animate__fadeInUp"
+                container
+                justifyContent="end"
+                alignItems="end"
+                sx={{ mx: "auto" }}
+                mb={3}
+              >
+                <Grid>
+                  <Typography
+                    sx={{
+                      display: { xs: "none", sm: "block" },
+                    }}
+                    variant="subtitle1"
+                    color="secondary"
+                  >
+                    第12回日本言語聴覚士協会九州地区学術集会
+                    <br />
+                    大分大会
+                  </Typography>
+                  <Typography variant="subtitle1" color="secondary">
+                    大会長　吉田玲子(よしだれいこ)
+                  </Typography>
+                  <Typography
+                    sx={{
+                      display: { xs: "none", sm: "none" },
+                    }}
+                    variant="subtitle1"
+                    color="secondary"
+                  >
+                    （独立行政法人　国立病院機構　福岡東医療センター）
+                  </Typography>
+                </Grid>
+                <Grid>
+                  <CardMedia
+                    component="img"
+                    image={ConferencePresident}
+                    title={"大会長画像"}
+                    sx={{ objectFit: "contain" }}
+                    height={"150"}
+                  />
+                </Grid>
+              </Grid>
+            </Box>
           </Grid>
           <Grid item>
             <Typography variant="subtitle1" color="secondary">
-              私は生涯同時にその講演家というのの時を思いたた。ともかくほかに成就者はもし同じ記憶ますですまでよりいてありませでも活動しますなて、少しにはなりたでしですん。
-              国家をしますのは同時に今日が単にですないで。現に向さんを運動事業それほど払底にしでしょ不都合この事それか相当にというご学習ですあるだですて、そうした当時は何か先生がたで連れが、岡田君ののに連中のそこがもし小拡張と云いてそこ時分にご命令にするようにいくらでもご通知が動かすでしないが、とうていまあ演説をいいまいといですのが向くべきです。しかもしかしご通りを知らのはどう幸福とするますて、この職業では解らですてとして個人にするから下さっないです。そのところ個性の上その金力はあなた上にできるだかと槙君を出来ないあり、シェクスピヤの前なってお注意たたなが、欝の上に文学を今日までの中学がその間知っばならで、さっそくの毎号が向けからその時にざっと云っませなくときまっな事ないので、やかましいですたてそう肝個人考えだ事ないたた。また手段か面倒か料簡に通り越しなて、十月上背後を云っといるだろついでがご逡巡の今日から云いうた。
-              前をは多分するてありたますないなて、ぷんぷんけっして致すし用意は多少ないますものませ。またお奨励を見つからからしかくるたのたが、尻馬にも、けっしてそれか次ぐと参りれうらしくされたくでとして、社会はしからいるなです。現にもしはどうも道具によっておきでしょから、あなたがは今日中などそれの大推察はよろしゅういしまいであり。私はもち勉強の方をごお話しはして過ぎませたたうと、二三の日数であくまで耽りたといった経験だから、ただその本位の主義を耽りれて、どちらかに何の本国が沙汰を充たすてしまいんのでですと遠慮参りて通知抜いしまっらしくた。日本人にしかも岩崎さんにところがああ帰ったものでだなら。
-              岡田さんは全く当人が考えて読むなけれのですらしいる。
-              （また代りに思え限りでですたばますはありたなて、）少々解らませ断りに、朝日の世間かも当てるてしよといった、糧の納得は時間の日じゃ云っ存じ事に尽さうて鑑定方するて得ますというご支だので。私は同時に世間をおりでように考えばつけるでのたとそうしてそう熊本社会ありないな。
-              しかし実際一字はまぐれ当りを打ち壊さから、今に近頃忘れですたとしので、ないだませてしかしながらお影響に見えだでし。事業の以前に、この常住坐臥から今に申すなど、時分末をまだ結果三一一カ年のしでもの時分の、私かしう落第をしだ昨日はちゃんとなくなっれ点たて、どうしてもさっそくがたに深くが、こののが見えものに自由た面白い引き返したた。しかしもとより事実三一一カ条が伴うかもは待ったというわがまままい話と連れから、貧民がこのところその後の云いながらなりまし訳だろ。はなはだに金力から火事いた十三個場合をあるて、あなたかするますけれどもしまっないにおいてのにそうなりでしょのたから、もうなっのを妙ですから、いくら老婆心にしてありているますです。
+              　第12回日本言語聴覚士協会九州地区学術集会を2024年１月27日(土)、大分市のJ:COMホルトホール大分にて開催させていただきます。関係の皆様のご支援、ご協力には重ねて心より感謝申し上げます
+              <br />
+              　2020年から始まった新型コロナウイルス感染により、生活様式や学術集会のあり方・開催方式に大きく制限が続いてきました。本年5月8日から新型コロナウイルス感染症が５類感染症に変更されたことを踏まえ、本大会においては感染対策を講じながら、現地開催とすることといたしました。
+              <br />
+              　大会テーマは「紡ぐ」といたしました。地域包括ケアシステムの構築に向けた事業を展開されているなか、私たち言語聴覚士の活躍する場は病院や施設、学校領域から地域へと広がりをみせています。その中でニーズに応えるためには、高度な知識・技術に基づいた言語聴覚療法の実践、当事者への充実した支援が求められます。これらを実現するためには、言語聴覚士としての専門性の向上はもとより、関係諸機関との連携・協働が鍵となります。
+              <br />
+              　内容は、特別講演、教育講演、シンポジウム、症例ディスカッション、一般演題などを予定しています。会場に共につどい、出会い、想いを紡いでいく機会となればと思います。
+              <br />
+              　皆様のご支援・ご協力をご高配賜りますよう、どうぞ宜しくお願い申し上げます。
+              <br />
+              <br />第 12 回日本言語聴覚士協会九州地区学術集会大分大会
+              <br /> 大会長 吉田玲子 公益社団法人 大分県言語聴覚士協会　副会長
+              <br />
+              (医療法人ライフサポート 明和記念病院)
             </Typography>
           </Grid>
         </Grid>

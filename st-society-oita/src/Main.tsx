@@ -48,12 +48,12 @@ function Main(props: Props) {
       <List>
         {[
           "TOP",
-          "紹介VTR",
+          // "紹介VTR",
           "会長挨拶",
-          "概要",
-          "プログラム",
-          "スケジュール",
-          "参加登録",
+          // "概要",
+          // "プログラム",
+          // "スケジュール",
+          // "参加登録",
           "演題登録",
           "各種ダウンロード",
           "問い合わせ",
@@ -135,11 +135,9 @@ function Main(props: Props) {
           component="main"
           sx={{
             flexGrow: 1,
-            p: 3,
             width: { sm: `calc(100% - ${drawerWidth}px)` },
           }}
         >
-          <Toolbar />
           <Box sx={{ width: { xs: `100%`, md: `60%` }, mx: `auto` }}>
             <Grid
               container
@@ -153,24 +151,24 @@ function Main(props: Props) {
               <Grid item xs={2} sm={4} md={4}>
                 <WhatNew />
               </Grid>
-              <Grid item xs={2} sm={4} md={4}>
+              {/* <Grid item xs={2} sm={4} md={4}>
                 <IntroVideo />
-              </Grid>
+              </Grid> */}
               <Grid item xs={2} sm={4} md={4}>
                 <Greeting />
               </Grid>
-              <Grid item xs={2} sm={4} md={4}>
+              {/* <Grid item xs={2} sm={4} md={4}>
                 <Summary />
-              </Grid>
-              <Grid item xs={2} sm={4} md={4}>
+              </Grid> */}
+              {/* <Grid item xs={2} sm={4} md={4}>
                 <Program />
-              </Grid>
-              <Grid item xs={2} sm={4} md={4}>
+              </Grid> */}
+              {/* <Grid item xs={2} sm={4} md={4}>
                 <Schedule />
-              </Grid>
-              <Grid item xs={2} sm={4} md={4}>
+              </Grid> */}
+              {/* <Grid item xs={2} sm={4} md={4}>
                 <Registration />
-              </Grid>
+              </Grid> */}
               <Grid item>
                 <AbstractRegistration />
               </Grid>

@@ -10,7 +10,7 @@ function AbstractRegistration() {
   });
   return (
     <div
-      id="item_7"
+      id="item_2"
       className="AbstractRegistration"
       style={{ maxHeight: "40vh" }}
       ref={ref}
@@ -31,7 +31,7 @@ function AbstractRegistration() {
               primaryTypographyProps={{
                 variant: "h4",
               }}
-              secondary="案内のダウンロードと、大会の参加登録ができます。"
+              secondary="演題募集要項がダウンロードできます。"
               secondaryTypographyProps={{
                 color: "secondary",
                 variant: "h6",
@@ -46,25 +46,19 @@ function AbstractRegistration() {
             alignItems="canter" //左寄せよせの場合はflex-start
           >
             <Typography variant="h6" color="secondary">
-              演題登録期間：2023/2/10 ～2023/3/10
+              演題登録期間：2023年　6 月１日(木)～ 8月 31 日(木)まて
             </Typography>
           </Grid>
           <Grid item>
             <Grid container>
-              <Grid item mr={"5vw"}>
-                <Button variant="contained" size="large">
-                  <Link href="src\dawnload\img.png" download="img.png">
-                    <Typography style={{ color: "white" }}>
-                      ダウンロード
-                    </Typography>
-                  </Link>
-                </Button>
-              </Grid>
               <Grid item>
                 <Button variant="contained" size="large">
-                  <Link href="src\dawnload\img.png" download="img.png">
+                  <Link
+                    href="../download/submissionGuidelines.pdf"
+                    download="演題募集要項.pdf"
+                  >
                     <Typography style={{ color: "white" }}>
-                      登録フォーム
+                      ダウンロード
                     </Typography>
                   </Link>
                 </Button>
