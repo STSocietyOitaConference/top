@@ -21,10 +21,6 @@ function formatDate(inputDate: any) {
 }
 const informations = [
   [formatDate(20230601), "ホームページを公開いたしました。"],
-  [
-    formatDate(20230530),
-    "ただいまサイトの準備中です。今しばらくお待ちください。",
-  ],
 ];
 function WhatNew() {
   const { ref } = useInView({
@@ -42,7 +38,7 @@ function WhatNew() {
         direction="column"
         justifyContent="center"
         alignItems="center"
-        mb={6}
+        mb={20}
         className="animate__animated animate__fadeInUp animate__delay-3s"
       >
         <Grid item xs={12} md={6}>

@@ -12,7 +12,7 @@ function Greeting() {
     triggerOnce: true, // 最初の一度だけ実行
   });
   return (
-    <Box ref={ref} className="Greeting">
+    <Box ref={ref} className="Greeting" mb={20}>
       {inView && (
         <Grid
           id="item_1"
@@ -44,38 +44,33 @@ function Greeting() {
                 sx={{ mx: "auto" }}
                 mb={3}
               >
-                <Grid>
+                <Grid item xs={9}>
+                  <Typography variant="subtitle1" color="secondary">
+                    第12回日本言語聴覚士協会九州地区学術集会大分大会
+                  </Typography>
+                  <Typography variant="subtitle1" color="secondary">
+                    大会長 吉田玲子
+                  </Typography>
                   <Typography
+                    variant="subtitle1"
+                    color="secondary"
                     sx={{
                       display: { xs: "none", sm: "block" },
                     }}
-                    variant="subtitle1"
-                    color="secondary"
                   >
-                    第12回日本言語聴覚士協会九州地区学術集会
+                    公益社団法人 大分県言語聴覚士協会　副会長
                     <br />
-                    大分大会
-                  </Typography>
-                  <Typography variant="subtitle1" color="secondary">
-                    大会長　吉田玲子(よしだれいこ)
-                  </Typography>
-                  <Typography
-                    sx={{
-                      display: { xs: "none", sm: "none" },
-                    }}
-                    variant="subtitle1"
-                    color="secondary"
-                  >
-                    （独立行政法人　国立病院機構　福岡東医療センター）
+                    (医療法人ライフサポート 明和記念病院)
                   </Typography>
                 </Grid>
-                <Grid>
+                <Grid item xs={3}>
                   <CardMedia
                     component="img"
                     image={ConferencePresident}
                     title={"大会長画像"}
-                    sx={{ objectFit: "contain" }}
-                    height={"150"}
+                    sx={{
+                      height: { xs: "100px", md: "150px" },
+                    }}
                   />
                 </Grid>
               </Grid>
@@ -92,11 +87,6 @@ function Greeting() {
               　内容は、特別講演、教育講演、シンポジウム、症例ディスカッション、一般演題などを予定しています。会場に共につどい、出会い、想いを紡いでいく機会となればと思います。
               <br />
               　皆様のご支援・ご協力をご高配賜りますよう、どうぞ宜しくお願い申し上げます。
-              <br />
-              <br />第 12 回日本言語聴覚士協会九州地区学術集会大分大会
-              <br /> 大会長 吉田玲子 公益社団法人 大分県言語聴覚士協会　副会長
-              <br />
-              (医療法人ライフサポート 明和記念病院)
             </Typography>
           </Grid>
         </Grid>

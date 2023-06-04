@@ -18,7 +18,7 @@ function Inquiry() {
   });
 
   return (
-    <Box id="item_4" className="Inquiry" style={{ height: "50vh" }} ref={ref}>
+    <Box id="item_4" className="Inquiry" mb={10} ref={ref}>
       {inView && (
         <Grid
           container
@@ -26,7 +26,6 @@ function Inquiry() {
           textAlign="center"
           alignItems="center"
           sx={{ mx: "auto" }}
-          mb={12}
           className="animate__animated animate__fadeInUp"
         >
           <Grid item mb={"4vh"}>
@@ -55,7 +54,10 @@ function Inquiry() {
           </Grid>
           <Grid item>
             <Button variant="contained" size="large">
-              <Link href="mailto:2024.9510.oita@gmail.com?subject=大会についての問い合わせ">
+              <Link
+                href="mailto:2024.9510.oita@gmail.com?subject=大会についての問い合わせ"
+                underline="none"
+              >
                 <Typography style={{ color: "white" }}>
                   お問い合わせを送る
                 </Typography>

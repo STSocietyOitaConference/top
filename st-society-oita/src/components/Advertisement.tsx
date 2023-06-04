@@ -43,13 +43,13 @@ function Advertisement() {
   ];
   return (
     <Box className="Advertisement" ref={ref}>
-      {/* {inView && ( */}
       <Grid
         id="item_5"
         container
         flexDirection={"column"}
         alignItems="center"
         className="animate__animated animate__fadeInUp"
+        mb={10}
       >
         <Grid item>
           <Typography variant="h4" mb={3}>
@@ -70,7 +70,6 @@ function Advertisement() {
           ))}
         </Grid>
       </Grid>
-      {/* )} */}
     </Box>
   );
 }

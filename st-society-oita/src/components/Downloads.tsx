@@ -17,7 +17,7 @@ import "animate.css";
 const dowonloadInfo = [
   [
     "展示・広告掲載 申込用紙",
-    "展示・広告掲載用の申込用紙がダウンロードできます。",
+    "必要事項記載の上、FAXでお送りください。※期限：令和5年8月31日（木）",
   ],
 ];
 function Downloads() {
@@ -34,7 +34,7 @@ function Downloads() {
         direction="column"
         justifyContent="center"
         alignItems="center"
-        mb={12}
+        mb={20}
       >
         <Grid item>
           {inView && (
@@ -44,21 +44,21 @@ function Downloads() {
           )}
         </Grid>
         <Grid item>
-          <Box component={"div"}>
-            <Grid container mx="auto">
-              {dowonloadInfo.map((item: any, _index) => {
-                return (
-                  <ListItem disablePadding key={_index}>
-                    <ListItemButton
-                      sx={{
-                        borderBottom: 0.5,
-                        borderColor: "#e6e6e6",
-                      }}
-                      disableRipple
-                    >
+          <Box id="contents" component={"div"}>
+            {dowonloadInfo.map((item: any, _index) => {
+              return (
+                <ListItem disablePadding key={_index}>
+                  <ListItemButton
+                    sx={{
+                      borderBottom: 0.5,
+                      borderColor: "#e6e6e6",
+                    }}
+                    disableRipple
+                  >
+                    <Box id="content" component={"div"}>
                       <Grid container justifyContent="space-between">
-                        <Grid item>
-                          <Box component="div">
+                        <Grid item xs={10}>
+                          <Box id="docInfo" component="div">
                             <ListItemText
                               primary={item[0]}
                               primaryTypographyProps={{
@@ -73,11 +73,15 @@ function Downloads() {
                             />
                           </Box>
                         </Grid>
-                        <Grid item>
+                        <Grid item xs={1}>
                           <IconButton
+                            id="downloadButton"
                             color="primary"
                             aria-label="upload picture"
                             component="label"
+                            sx={{
+                              marginTop: "20px",
+                            }}
                           >
                             <Link
                               href="https://drive.google.com/uc?export=download&id=1wnIt0CCwJ91WPr8hgpdqSZ2TrFR1MfpN"
@@ -88,11 +92,11 @@ function Downloads() {
                           </IconButton>
                         </Grid>
                       </Grid>
-                    </ListItemButton>
-                  </ListItem>
-                );
-              })}
-            </Grid>
+                    </Box>
+                  </ListItemButton>
+                </ListItem>
+              );
+            })}
           </Box>
         </Grid>
       </Grid>

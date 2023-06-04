@@ -47,7 +47,6 @@ function App() {
       fontSize: "1.3rem",
     },
   };
-
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
