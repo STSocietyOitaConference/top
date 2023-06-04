@@ -19,7 +19,7 @@ function Title() {
             image={PosterImage}
             title={"学会ポスター"}
             sx={{
-              height: { xs: "62vh", md: "920px" },
+              height: { xs: "530px", md: "920px" },
               mt: { xs: 6, md: "0" },
             }}
           />
