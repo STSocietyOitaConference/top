@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "./static/css/main.0b79e6dd.css",
-    "main.js": "./static/js/main.362aa211.js",
+    "main.js": "./static/js/main.81fc69de.js",
     "static/js/787.1cf49e89.chunk.js": "./static/js/787.1cf49e89.chunk.js",
     "static/media/poster.jpg": "./static/media/poster.d241ed223a6dbb32e938.jpg",
     "static/media/conferencePresident.jpg": "./static/media/conferencePresident.6116585d1d146919ed09.jpg",
     "index.html": "./index.html",
     "main.0b79e6dd.css.map": "./static/css/main.0b79e6dd.css.map",
-    "main.362aa211.js.map": "./static/js/main.362aa211.js.map",
+    "main.81fc69de.js.map": "./static/js/main.81fc69de.js.map",
     "787.1cf49e89.chunk.js.map": "./static/js/787.1cf49e89.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0b79e6dd.css",
-    "static/js/main.362aa211.js"
+    "static/js/main.81fc69de.js"
   ]
 }
