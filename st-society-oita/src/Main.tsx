@@ -54,7 +54,7 @@ function Main(props: Props) {
           // "プログラム",
           // "スケジュール",
           // "参加登録",
-          // "演題登録",
+          "演題登録",
           "各種ダウンロード",
           "問い合わせ",
           "広告",
@@ -169,9 +169,9 @@ function Main(props: Props) {
               {/* <Grid item xs={2} sm={4} md={4}>
                 <Registration />
               </Grid> */}
-              {/* <Grid item>
+              <Grid item>
                 <AbstractRegistration />
-              </Grid> */}
+              </Grid>
               <Grid item>
                 <Downloads />
               </Grid>
