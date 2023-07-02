@@ -11,6 +11,9 @@ import Downloads from "./components/Downloads";
 import AbstractRegistration from "./components/AbstractRegistration";
 import Inquiry from "./components/Inquiry";
 import Advertisement from "./components/Advertisement";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import TwitterIcon from "@mui/icons-material/Twitter";
+import FacebookIcon from "@mui/icons-material/Facebook";
 import {
   AppBar,
   Box,
@@ -51,7 +54,7 @@ function Main(props: Props) {
           // "紹介VTR",
           "会長挨拶",
           // "概要",
-          // "プログラム",
+          "プログラム",
           // "スケジュール",
           // "参加登録",
           "演題登録",
@@ -65,6 +68,39 @@ function Main(props: Props) {
             </ListItemButton>
           </ListItem>
         ))}
+        <ListItemButton
+          href={"https://twitter.com/kyusyuoita?s=20"}
+          className="animate__animated animate__lightSpeedInLeft  animate__delay-0.5s"
+        >
+          <span className="icon_text">Twitter</span>
+          <TwitterIcon
+            className="icon"
+            fontSize="small"
+            sx={{ marginLeft: 1 }}
+          />
+        </ListItemButton>
+        <ListItemButton
+          href={"https://instagram.com/2024.9510.oita?igshid=OGIzYTJhMTRmYQ=="}
+          className="animate__animated animate__lightSpeedInLeft  animate__delay-1s"
+        >
+          <span className="icon_text">Instagram</span>
+          <InstagramIcon
+            className="icon"
+            fontSize="small"
+            sx={{ marginLeft: 1 }}
+          />
+        </ListItemButton>
+        <ListItemButton
+          href={"https://www.facebook.com/profile.php?id=100094220377079"}
+          className="animate__animated animate__lightSpeedInLeft  animate__delay-2s"
+        >
+          <span className="icon_text">Facebook</span>
+          <FacebookIcon
+            className="icon"
+            fontSize="small"
+            sx={{ marginLeft: 1 }}
+          />
+        </ListItemButton>
       </List>
     </div>
   );
@@ -160,7 +196,7 @@ function Main(props: Props) {
               {/* <Grid item xs={2} sm={4} md={4}>
                 <Summary />
               </Grid> */}
-              {/* <Grid item xs={2} sm={4} md={4}>
+              {/* <Grid item xs={2} sm={4} md={4} mb={6}>
                 <Program />
               </Grid> */}
               {/* <Grid item xs={2} sm={4} md={4}>
