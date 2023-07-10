@@ -1,5 +1,12 @@
 import React from "react";
-import { Typography, ListItemText, Button, Link, Grid } from "@mui/material";
+import {
+  Typography,
+  ListItemText,
+  Button,
+  Link,
+  Grid,
+  Box,
+} from "@mui/material";
 import { useInView } from "react-intersection-observer";
 import "animate.css";
 
@@ -46,21 +53,44 @@ function Registration() {
             alignItems="canter" //左寄せよせの場合はflex-start
           >
             <Typography variant="h6" color="secondary">
-              演題登録期間：未定
+              演題登録期間：2023年7月1日(木)～12月28日(木)まで
             </Typography>
           </Grid>
           <Grid item>
-            <Grid container>
-              <Grid>
-                <Button variant="contained" size="large">
-                  <Link href="src\dawnload\img.png" download="img.png">
-                    <Typography style={{ color: "white" }}>
-                      ダウンロード
-                    </Typography>
-                  </Link>
-                </Button>
+            <Box component={"div"}>
+              <Grid container>
+                <Grid item>
+                  <Button
+                    variant="contained"
+                    size="large"
+                    sx={{ marginRight: "3vw" }}
+                  >
+                    <Link
+                      href="https://drive.google.com/uc?export=download&id=1fC5YrSNjdrEN1kX6OfyVqDmUcdn5Uqyg"
+                      download="演題募集要項.pdf"
+                      underline={"none"}
+                    >
+                      <Typography style={{ color: "white" }}>
+                        ダウンロード
+                      </Typography>
+                    </Link>
+                  </Button>
+                </Grid>
+                <Grid item>
+                  <Button variant="contained" size="large">
+                    <Link
+                      href="https://docs.google.com/forms/d/e/1FAIpQLSeJNTv6bXjrYWkEv3F1oX6kq_XclmdbOGnLa5isXo8fwn_5DQ/viewform?pli=1"
+                      underline={"none"}
+                      target="_blank"
+                    >
+                      <Typography style={{ color: "white" }}>
+                        　参加登録　
+                      </Typography>
+                    </Link>
+                  </Button>
+                </Grid>
               </Grid>
-            </Grid>
+            </Box>
           </Grid>
         </Grid>
       )}

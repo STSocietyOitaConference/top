@@ -25,6 +25,7 @@ import {
   ListItemText,
   Toolbar,
   Grid,
+  Typography,
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 
@@ -56,7 +57,7 @@ function Main(props: Props) {
           // "概要",
           // "プログラム",
           // "スケジュール",
-          // "参加登録",
+          "参加登録",
           "演題登録",
           "各種ダウンロード",
           "問い合わせ",
@@ -118,15 +119,21 @@ function Main(props: Props) {
             ml: { sm: `${drawerWidth}px` },
           }}
         >
-          <Grid container sx={{ display: { sm: "none" } }} ml={1}>
-            <IconButton
-              color="primary"
-              aria-label="open drawer"
-              edge="start"
-              onClick={handleDrawerToggle}
-            >
-              <MenuIcon />
-            </IconButton>
+          <Grid container ml={1}>
+            <Toolbar>
+              <IconButton
+                color="primary"
+                aria-label="open drawer"
+                edge="start"
+                onClick={handleDrawerToggle}
+                sx={{ display: { sm: "none" } }}
+              >
+                <MenuIcon />
+              </IconButton>
+              <Typography variant="h6" noWrap component="div" color="secondary">
+                大分県言語聴覚士会
+              </Typography>
+            </Toolbar>
           </Grid>
         </AppBar>
         <Box
@@ -175,6 +182,7 @@ function Main(props: Props) {
           }}
         >
           <Box sx={{ width: { xs: `100%`, md: `60%` }, mx: `auto` }}>
+            <Toolbar />
             <Grid
               container
               direction="column"
@@ -202,9 +210,9 @@ function Main(props: Props) {
               {/* <Grid item xs={2} sm={4} md={4}>
                 <Schedule />
               </Grid> */}
-              {/* <Grid item xs={2} sm={4} md={4}>
+              <Grid item xs={2} sm={4} md={4}>
                 <Registration />
-              </Grid> */}
+              </Grid>
               <Grid item>
                 <AbstractRegistration />
               </Grid>

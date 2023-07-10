@@ -20,6 +20,8 @@ function formatDate(inputDate: any) {
   return formatday;
 }
 const informations = [
+  [formatDate(20230710), "参加登録の案内が公開されました。"],
+  [formatDate(20230701), "SNSを開設しました。"],
   [formatDate(20230619), "演題募集要項が公開されました。"],
   [formatDate(20230601), "ホームページを公開いたしました。"],
 ];
@@ -48,39 +50,41 @@ function WhatNew() {
           </Typography>
         </Grid>
         <Grid item xs={12} md={6}>
-          {informations.map((item: any, _index) => {
-            return (
-              <ListItem disablePadding key={_index} sx={myStyleList}>
-                <ListItemButton
-                  sx={{
-                    textAlign: "left",
-                    borderBottom: 0.5,
-                    borderColor: "#e6e6e6",
-                  }}
-                  disableRipple
-                >
-                  <Grid item container flexDirection={"column"}>
-                    <Grid item>
-                      <ListItemText
-                        primary={item[0]}
-                        primaryTypographyProps={{
-                          color: "secondary",
-                        }}
-                      />
+          <Box>
+            {informations.map((item: any, _index) => {
+              return (
+                <ListItem disablePadding key={_index} sx={myStyleList}>
+                  <ListItemButton
+                    sx={{
+                      textAlign: "left",
+                      borderBottom: 0.5,
+                      borderColor: "#e6e6e6",
+                    }}
+                    disableRipple
+                  >
+                    <Grid item container flexDirection={"column"}>
+                      <Grid item>
+                        <ListItemText
+                          primary={item[0]}
+                          primaryTypographyProps={{
+                            color: "secondary",
+                          }}
+                        />
+                      </Grid>
+                      <Grid>
+                        <ListItemText
+                          primary={item[1]}
+                          primaryTypographyProps={{
+                            color: "secondary",
+                          }}
+                        />
+                      </Grid>
                     </Grid>
-                    <Grid>
-                      <ListItemText
-                        primary={item[1]}
-                        primaryTypographyProps={{
-                          color: "secondary",
-                        }}
-                      />
-                    </Grid>
-                  </Grid>
-                </ListItemButton>
-              </ListItem>
-            );
-          })}
+                  </ListItemButton>
+                </ListItem>
+              );
+            })}
+          </Box>
         </Grid>
       </Grid>
     </Box>
