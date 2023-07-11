@@ -32,7 +32,17 @@ function WhatNew() {
     triggerOnce: true, // 最初の一度だけ実行
   });
   const myStyleList = {
-    width: { sm: 200, md: "30vw" },
+    MuiCssBaseline: {
+      styleOverrides: `
+      ::-webkit-scrollbar{
+          width: 15px;
+      },
+      ::-webkit-scrollbar-thumb {
+          background-color: #276976;
+          border-radius: 10px;
+      }
+      `,
+    },
   };
   return (
     <Box className="WhatNew" ref={ref}>
@@ -50,40 +60,42 @@ function WhatNew() {
           </Typography>
         </Grid>
         <Grid item xs={12} md={6}>
-          <Box>
-            {informations.map((item: any, _index) => {
-              return (
-                <ListItem disablePadding key={_index} sx={myStyleList}>
-                  <ListItemButton
-                    sx={{
-                      textAlign: "left",
-                      borderBottom: 0.5,
-                      borderColor: "#e6e6e6",
-                    }}
-                    disableRipple
-                  >
-                    <Grid item container flexDirection={"column"}>
-                      <Grid item>
-                        <ListItemText
-                          primary={item[0]}
-                          primaryTypographyProps={{
-                            color: "secondary",
-                          }}
-                        />
+          <Box component={"div"} id="content-wrap" minWidth={"35vw"}>
+            <Box sx={{ height: "25vh", overflowY: "scroll", myStyleList }}>
+              {informations.map((item: any, _index) => {
+                return (
+                  <ListItem disablePadding key={_index} sx={myStyleList}>
+                    <ListItemButton
+                      sx={{
+                        textAlign: "left",
+                        borderBottom: 0.5,
+                        borderColor: "#e6e6e6",
+                      }}
+                      disableRipple
+                    >
+                      <Grid item container flexDirection={"column"}>
+                        <Grid item>
+                          <ListItemText
+                            primary={item[0]}
+                            primaryTypographyProps={{
+                              color: "secondary",
+                            }}
+                          />
+                        </Grid>
+                        <Grid>
+                          <ListItemText
+                            primary={item[1]}
+                            primaryTypographyProps={{
+                              color: "secondary",
+                            }}
+                          />
+                        </Grid>
                       </Grid>
-                      <Grid>
-                        <ListItemText
-                          primary={item[1]}
-                          primaryTypographyProps={{
-                            color: "secondary",
-                          }}
-                        />
-                      </Grid>
-                    </Grid>
-                  </ListItemButton>
-                </ListItem>
-              );
-            })}
+                    </ListItemButton>
+                  </ListItem>
+                );
+              })}
+            </Box>
           </Box>
         </Grid>
       </Grid>

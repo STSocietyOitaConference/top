@@ -27,7 +27,7 @@ function Downloads() {
     triggerOnce: true, // 最初の一度だけ実行
   });
   return (
-    <Box id="item_3" ref={ref} className="Downloads">
+    <Box id="item_3" ref={ref} className="Downloads anchor">
       <Grid
         className="animate__animated animate__fadeInUp"
         container
