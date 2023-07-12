@@ -72,6 +72,7 @@ function Main(props: Props) {
         <ListItemButton
           href={"https://twitter.com/kyusyuoita?s=20"}
           className="animate__animated animate__lightSpeedInLeft  animate__delay-0.5s"
+          target="_blank"
         >
           <span className="icon_text">Twitter</span>
           <TwitterIcon
@@ -83,6 +84,7 @@ function Main(props: Props) {
         <ListItemButton
           href={"https://instagram.com/2024.9510.oita?igshid=OGIzYTJhMTRmYQ=="}
           className="animate__animated animate__lightSpeedInLeft  animate__delay-1s"
+          target="_blank"
         >
           <span className="icon_text">Instagram</span>
           <InstagramIcon
@@ -94,6 +96,7 @@ function Main(props: Props) {
         <ListItemButton
           href={"https://www.facebook.com/profile.php?id=100094220377079"}
           className="animate__animated animate__lightSpeedInLeft  animate__delay-2s"
+          target="_blank"
         >
           <span className="icon_text">Facebook</span>
           <FacebookIcon
