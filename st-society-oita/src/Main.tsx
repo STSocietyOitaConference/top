@@ -134,7 +134,7 @@ function Main(props: Props) {
                 <MenuIcon />
               </IconButton>
               <Typography variant="h6" noWrap component="div" color="secondary">
-                大分県言語聴覚士会
+                第12回日本言語聴覚士協会九州地区学術集会 大分大会
               </Typography>
             </Toolbar>
           </Grid>
