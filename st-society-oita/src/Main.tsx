@@ -133,8 +133,25 @@ function Main(props: Props) {
               >
                 <MenuIcon />
               </IconButton>
-              <Typography variant="h6" noWrap component="div" color="secondary">
+              <Typography
+                noWrap
+                component="div"
+                color="secondary"
+                sx={{
+                  display: { xs: "none", sm: "block" },
+                }}
+              >
                 第12回日本言語聴覚士協会九州地区学術集会 大分大会
+              </Typography>
+              <Typography
+                noWrap
+                component="div"
+                color="secondary"
+                sx={{
+                  display: { xs: "block", sm: "none" },
+                }}
+              >
+                日本言語聴覚士協会九州地区学術集会
               </Typography>
             </Toolbar>
           </Grid>
