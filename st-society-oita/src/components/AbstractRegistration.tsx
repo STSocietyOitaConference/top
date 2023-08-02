@@ -11,7 +11,7 @@ function AbstractRegistration() {
   });
   return (
     <div
-      id="item_2"
+      id="item_3"
       className="AbstractRegistration"
       style={{ maxHeight: "40vh" }}
       ref={ref}

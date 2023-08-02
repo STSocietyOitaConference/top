@@ -44,7 +44,7 @@ function Advertisement() {
   return (
     <Box className="Advertisement" ref={ref}>
       <Grid
-        id="item_5"
+        id="item_7"
         container
         flexDirection={"column"}
         alignItems="center"

@@ -18,7 +18,7 @@ function Registration() {
   });
   return (
     <div
-      id="item_6"
+      id="item_4"
       className="Registration"
       ref={ref}
       style={{ height: "40vh" }}

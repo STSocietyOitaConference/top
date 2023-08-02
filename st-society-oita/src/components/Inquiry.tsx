@@ -18,7 +18,7 @@ function Inquiry() {
   });
 
   return (
-    <Box id="item_4" className="Inquiry" mb={10} ref={ref}>
+    <Box id="item_6" className="Inquiry" mb={10} ref={ref}>
       {inView && (
         <Grid
           container

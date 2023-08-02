@@ -1,18 +1,11 @@
 import React from "react";
-import {
-  ListItemText,
-  ListItem,
-  Grid,
-  Divider,
-  CardMedia,
-  List,
-  Typography,
-} from "@mui/material";
+import { ListItemText, Grid, CardMedia, Typography } from "@mui/material";
 import { useInView } from "react-intersection-observer";
 import "animate.css";
 import { Box } from "@mui/system";
-import Performer1 from "../assets/program/performer1.png";
-import Performer2 from "../assets/program/performer2.png";
+import Performer1 from "../assets/program/hujita_ikuyo.png";
+import Performer2 from "../assets/program/kariyasu.jpg";
+import Performer3 from "../assets/program/ogata_yuko.png";
 
 type Record = {
   textType: number;
@@ -26,27 +19,45 @@ const Programs: LectureContent[] = [
   {
     performerImage: Performer1,
     programInfo: [
-      { textType: 0, text: "教育講演" },
-      { textType: 1, text: "間接法による吃音に対するアプローチ" },
-      { textType: 2, text: "久保　健彦 　 （久保ことばの教室）" },
-      { textType: 3, text: "都筑　澄夫 　 （都筑吃音相談室）" },
+      { textType: 0, text: "大会講演" },
+      { textType: 1, text: "言語聴覚療法の歴史を紡ぐ（仮）" },
+      {
+        textType: 2,
+        text: "藤田　郁代（国際医療福祉大学大学院福祉学研究科 言語聴覚分野）",
+      },
+      {
+        textType: 3,
+        text: "藤田　郁代",
+      },
     ],
   },
   {
     performerImage: Performer2,
     programInfo: [
-      { textType: 0, text: "基調講演" },
-      {
-        textType: 1,
-        text: "これからの言語聴覚士に求められる役割　～地域包括ケアへの準備と覚悟はできていますか～",
-      },
+      { textType: 0, text: "教育講演" },
+      { textType: 1, text: "発声・発語領域の最新の知見（仮）" },
       {
         textType: 2,
-        text: "宮本　恵美　 （熊本保健科学大学 保健科学部 リハビリテーション学科言語聴覚学専攻）",
+        text: "苅安 誠（潤和リハビリテーション診療研究所）",
       },
       {
         textType: 3,
-        text: "内山　量史　 （春日居サイバーナイフ・リハビリ病院 / 一般社団法人 山梨県言語聴覚士会 / 一般社団法人 日本言語聴覚士協会）",
+        text: "苅安 誠",
+      },
+    ],
+  },
+  {
+    performerImage: Performer3,
+    programInfo: [
+      { textType: 0, text: "教育講演" },
+      { textType: 1, text: "事例を踏まえた小児構音障害へのアプローチ（仮）" },
+      {
+        textType: 2,
+        text: "緒方 祐子（倉重こどもクリニック）",
+      },
+      {
+        textType: 3,
+        text: "緒方 祐子",
       },
     ],
   },
@@ -63,12 +74,12 @@ const MoldingText = (textType: number, text: string): JSX.Element => {
 
     // 座長
     case 2:
-      return <Typography color="secondary">{`座　長：` + text}</Typography>;
+      return <Typography color="secondary">{`座長：` + text}</Typography>;
     // 演者
     case 3:
       return (
         <ListItemText
-          primary={`演　者：` + text}
+          primary={`演者：` + text}
           primaryTypographyProps={{
             color: "secondary",
           }}
@@ -86,7 +97,7 @@ function Program() {
     triggerOnce: true, // 最初の一度だけ実行
   });
   return (
-    <Box component="div" id="item_4" className="program" ref={ref}>
+    <Box component="div" id="item_2" className="program" ref={ref}>
       {inView && (
         <Grid
           id="program_container"
@@ -105,12 +116,16 @@ function Program() {
               }}
             />
           </Grid>
-          <Grid id="title" item mb={1}>
-            <Box>
+          <Grid item mb={1} md={12}>
+            <Box
+              sx={{
+                width: { xs: "380px", md: "700px" },
+              }}
+            >
               {Programs.map((infos, _programIndex) => {
                 return (
                   <Grid container textAlign={"left"} key={_programIndex} mb={3}>
-                    <Grid id="performer" item xs={2} md={1} pt={4}>
+                    <Grid id="performer" item xs={2} md={2} pt={1}>
                       <CardMedia
                         component="img"
                         image={infos.performerImage}
@@ -121,7 +136,7 @@ function Program() {
                         }}
                       />
                     </Grid>
-                    <Grid id="lecture_content" item xs={10} md={11}>
+                    <Grid id="lecture_content" item xs={10} md={10}>
                       <Box component={"div"}>
                         {infos.programInfo.map(
                           (info: Record, _infoIndex: number) => {

@@ -51,17 +51,17 @@ function Main(props: Props) {
       <Toolbar />
       <List>
         {[
-          "TOP",
-          // "紹介VTR",
-          "会長挨拶",
-          // "概要",
-          // "プログラム",
-          // "スケジュール",
-          "参加登録",
-          "演題登録",
-          "各種ダウンロード",
-          "問い合わせ",
-          "広告",
+          "TOP", // id:0
+          // "紹介VTR",         // id:1
+          "会長挨拶", // id:2
+          // "概要",            // id:3
+          "プログラム", // id:4
+          // "スケジュール",    // id:5
+          "参加登録", // id:6
+          "演題登録", // id:7
+          "各種ダウンロード", // id:8
+          "問い合わせ", // id:9
+          "広告", // id:10
         ].map((text, index) => (
           <ListItem key={text} disablePadding>
             <ListItemButton href={`#item_${index}`}>
@@ -134,6 +134,7 @@ function Main(props: Props) {
                 <MenuIcon />
               </IconButton>
               <Typography
+                variant="h6"
                 noWrap
                 component="div"
                 color="secondary"
@@ -144,6 +145,7 @@ function Main(props: Props) {
                 第12回日本言語聴覚士協会九州地区学術集会 大分大会
               </Typography>
               <Typography
+                variant="h6"
                 noWrap
                 component="div"
                 color="secondary"
@@ -224,9 +226,9 @@ function Main(props: Props) {
               {/* <Grid item xs={2} sm={4} md={4}>
                 <Summary />
               </Grid> */}
-              {/* <Grid item xs={2} sm={4} md={4} mb={6}>
+              <Grid item xs={2} sm={4} md={4} mb={6}>
                 <Program />
-              </Grid> */}
+              </Grid>
               {/* <Grid item xs={2} sm={4} md={4}>
                 <Schedule />
               </Grid> */}
