@@ -21,13 +21,10 @@ const Programs: LectureContent[] = [
     programInfo: [
       { textType: 0, text: "大会講演" },
       { textType: 1, text: "言語聴覚療法の歴史を紡ぐ（仮）" },
-      {
-        textType: 2,
-        text: "藤田　郁代（国際医療福祉大学大学院福祉学研究科 言語聴覚分野）",
-      },
+
       {
         textType: 3,
-        text: "藤田　郁代",
+        text: "藤田　郁代（国際医療福祉大学大学院福祉学研究科 言語聴覚分野）",
       },
     ],
   },
@@ -36,13 +33,10 @@ const Programs: LectureContent[] = [
     programInfo: [
       { textType: 0, text: "教育講演" },
       { textType: 1, text: "発声・発語領域の最新の知見（仮）" },
-      {
-        textType: 2,
-        text: "苅安 誠（潤和リハビリテーション診療研究所）",
-      },
+
       {
         textType: 3,
-        text: "苅安 誠",
+        text: "苅安 誠（潤和リハビリテーション診療研究所）",
       },
     ],
   },
@@ -52,12 +46,8 @@ const Programs: LectureContent[] = [
       { textType: 0, text: "教育講演" },
       { textType: 1, text: "事例を踏まえた小児構音障害へのアプローチ（仮）" },
       {
-        textType: 2,
-        text: "緒方 祐子（倉重こどもクリニック）",
-      },
-      {
         textType: 3,
-        text: "緒方 祐子",
+        text: "緒方 祐子（倉重こどもクリニック）",
       },
     ],
   },
