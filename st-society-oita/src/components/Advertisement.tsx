@@ -1,5 +1,6 @@
 import React from "react";
 import { Typography, CardMedia, Grid, Link, Box } from "@mui/material";
+import Banner1 from "../assets/advertisement/banner_1.jpg";
 import SampleImage2 from "../assets/advertisement/banner_sample.png";
 import { useInView } from "react-intersection-observer";
 import "animate.css";
@@ -11,9 +12,9 @@ function Advertisement() {
   });
   const adList = [
     {
-      name: "SampleImage",
-      image: SampleImage2,
-      url: "http://www.oita-st.com/",
+      name: "玖珠郡医師会立老人保健施設 はね",
+      image: Banner1,
+      url: "https://hane.in/",
     },
     {
       name: "SampleImage",
@@ -59,11 +60,11 @@ function Advertisement() {
         <Grid item container spacing={{ xs: `30`, md: `50` }}>
           {adList.map((_item, _index) => (
             <Grid item key={_index} xs={6} md={4}>
-              <Link href={_item.url}>
+              <Link href={_item.url} target="_blank">
                 <CardMedia
                   component="img"
                   image={_item.image}
-                  title={"広告" + _index}
+                  title={_item.name}
                 />
               </Link>
             </Grid>
