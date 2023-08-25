@@ -53,7 +53,7 @@ function Registration() {
             alignItems="canter" //左寄せよせの場合はflex-start
           >
             <Typography variant="h6" color="secondary">
-              演題登録期間：2023年7月1日(木)～12月28日(木)まで
+              登録期間：2023年7月1日(木)～12月28日(木)まで
             </Typography>
           </Grid>
           <Grid item>
