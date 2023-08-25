@@ -47,7 +47,7 @@ function AbstractRegistration() {
             alignItems="canter" //左寄せよせの場合はflex-start
           >
             <Typography variant="h6" color="secondary">
-              演題登録期間：2023年6月１日(木)～8月31日(木)まで
+              演題登録期間：2023年6月１日(木)～10月31日(木)まで
             </Typography>
           </Grid>
           <Grid item>
@@ -55,7 +55,7 @@ function AbstractRegistration() {
               <Grid item>
                 <Button variant="contained" size="large">
                   <Link
-                    href="https://drive.google.com/uc?export=download&id=1z1rzUYR1sXOgIpXwB4NZmV0sfuQpUITJ"
+                    href="https://drive.google.com/uc?export=download&id=1iVKZytHb8DqxW73Yq-FzH_gP4mdnN4b3"
                     download="演題募集要項.pdf"
                     underline={"none"}
                   >
