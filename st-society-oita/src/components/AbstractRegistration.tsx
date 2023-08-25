@@ -1,5 +1,12 @@
 import React from "react";
-import { Typography, ListItemText, Button, Link, Grid } from "@mui/material";
+import {
+  Typography,
+  ListItemText,
+  Button,
+  Link,
+  Grid,
+  Box,
+} from "@mui/material";
 import { useInView } from "react-intersection-observer";
 import "animate.css";
 
@@ -44,11 +51,16 @@ function AbstractRegistration() {
             mb={"4vh"}
             container
             direction={"column"}
-            alignItems="canter" //左寄せよせの場合はflex-start
+            alignItems="center" //左寄せよせの場合はflex-start
           >
-            <Typography variant="h6" color="secondary">
-              演題登録期間：2023年6月１日(木)～10月31日(木)まで
-            </Typography>
+            <Box>
+              <Typography variant="h6" color="secondary">
+                演題登録期間：2023年6月１日(木)～<s>8月31日(木)まで</s>
+              </Typography>
+              <Typography variant="h6" color="secondary" textAlign={"end"}>
+                10月31日(木)まで
+              </Typography>
+            </Box>
           </Grid>
           <Grid item>
             <Grid container>
