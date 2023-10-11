@@ -56,7 +56,7 @@ function Main(props: Props) {
           "会長挨拶", // id:2
           // "概要",            // id:3
           "プログラム", // id:4
-          // "スケジュール",    // id:5
+          "スケジュール", // id:5
           "参加登録", // id:6
           "演題登録", // id:7
           "各種ダウンロード", // id:8
@@ -229,9 +229,9 @@ function Main(props: Props) {
               <Grid item xs={2} sm={4} md={4} mb={6}>
                 <Program />
               </Grid>
-              {/* <Grid item xs={2} sm={4} md={4}>
+              <Grid item xs={2} sm={4} md={4}>
                 <Schedule />
-              </Grid> */}
+              </Grid>
               <Grid item xs={2} sm={4} md={4}>
                 <Registration />
               </Grid>

@@ -1,8 +1,7 @@
 import React from "react";
 import ImageDialog from "../dialog/ImageDialog";
 import { Typography, Box, Grid } from "@mui/material";
-import SampleImage1 from "../dawnload/sampleImage_cat.jpg";
-import SampleImage2 from "../dawnload/sampleImage_dog.jpg";
+import SchedulePdf from "../assets/schedule/timeSchedule.jpg";
 import { useInView } from "react-intersection-observer";
 import "animate.css";
 export interface bookParam {
@@ -12,11 +11,7 @@ export interface bookParam {
 const bookList = [
   {
     id: 1,
-    image: SampleImage1,
-  },
-  {
-    id: 2,
-    image: SampleImage2,
+    image: SchedulePdf,
   },
 ];
 function Schedule() {
