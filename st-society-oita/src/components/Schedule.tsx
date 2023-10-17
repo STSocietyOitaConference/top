@@ -45,10 +45,9 @@ function Schedule() {
                 justifyContent="space-evenly"
                 alignItems="center"
                 mx="auto"
-                mb={6}
               >
                 {bookList.map((item, index) => (
-                  <Grid item key={index} xs={5} md={6}>
+                  <Grid item key={index} xs={10} md={6}>
                     <ImageDialog {...item} />
                   </Grid>
                 ))}

@@ -46,7 +46,7 @@ export default function ImageDialog(props: bookParam) {
       <CardMedia
         component="img"
         image={props.image}
-        title={"スケジュール" + props.id}
+        title={"スケジュール"}
         onClick={handleClickOpen}
       />
       <SimpleDialog

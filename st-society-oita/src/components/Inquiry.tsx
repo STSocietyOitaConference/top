@@ -6,9 +6,17 @@ import {
   Typography,
   Link,
   ListItemText,
+  IconButton,
+  Tooltip,
 } from "@mui/material";
+import ContentCopyIcon from "@mui/icons-material/ContentCopy";
 import { useInView } from "react-intersection-observer";
 import "animate.css";
+
+//クリップボードにコピー関数
+const copyToClipboard = async () => {
+  await global.navigator.clipboard.writeText("2024.9510.oita@gmail.com");
+};
 
 function Inquiry() {
   const { ref, inView } = useInView({
@@ -48,8 +56,21 @@ function Inquiry() {
             direction={"column"}
             alignItems="canter" //左寄せよせの場合はflex-start
           >
-            <Typography variant="h6" color="secondary">
+            <Typography
+              variant="h6"
+              color="secondary"
+              onClick={() => copyToClipboard()}
+            >
               2024.9510.oita@gmail.com
+              <Tooltip title="クリックしてコピー" placement="top" arrow>
+                <IconButton
+                  color="primary"
+                  size="small"
+                  onClick={() => copyToClipboard()}
+                >
+                  <ContentCopyIcon fontSize="small" />
+                </IconButton>
+              </Tooltip>
             </Typography>
           </Grid>
           <Grid item>
