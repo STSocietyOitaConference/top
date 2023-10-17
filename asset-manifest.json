@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "./static/css/main.90a1c082.css",
-    "main.js": "./static/js/main.7ce490b9.js",
+    "main.js": "./static/js/main.bfab4e08.js",
     "static/js/787.1cf49e89.chunk.js": "./static/js/787.1cf49e89.chunk.js",
     "static/media/ogata_yuko.png": "./static/media/ogata_yuko.694db3ac25dc8eccc93c.png",
     "static/media/poster.jpg": "./static/media/poster.ecfc8260193a8a4b1a51.jpg",
@@ -11,11 +11,11 @@
     "static/media/conferencePresident.jpg": "./static/media/conferencePresident.1ba708d8eb7d6298a35a.jpg",
     "index.html": "./index.html",
     "main.90a1c082.css.map": "./static/css/main.90a1c082.css.map",
-    "main.7ce490b9.js.map": "./static/js/main.7ce490b9.js.map",
+    "main.bfab4e08.js.map": "./static/js/main.bfab4e08.js.map",
     "787.1cf49e89.chunk.js.map": "./static/js/787.1cf49e89.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.90a1c082.css",
-    "static/js/main.7ce490b9.js"
+    "static/js/main.bfab4e08.js"
   ]
 }
