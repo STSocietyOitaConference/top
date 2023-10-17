@@ -17,7 +17,7 @@ import "animate.css";
 const dowonloadInfo = [
   [
     "展示・広告掲載 申込用紙",
-    "必要事項記載の上、FAXでお送りください。※期限：令和5年8月31日（木）",
+    "必要事項記載の上、FAXでお送りください。※期限：令和5年10月31日（木）",
   ],
 ];
 function Downloads() {
