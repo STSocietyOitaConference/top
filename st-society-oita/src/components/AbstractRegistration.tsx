@@ -55,17 +55,17 @@ function AbstractRegistration() {
           >
             <Box>
               <Typography variant="h6" color="secondary">
-                演題登録期間：2023年6月１日(木)～<s>8月31日(木)まで</s>
+                <s>演題登録期間：2023年6月１日(木)～10月31日(木)まで</s>
               </Typography>
-              <Typography variant="h6" color="secondary" textAlign={"end"}>
-                10月31日(木)まで
+              <Typography variant="h6" color="primary" textAlign={"start"}>
+                演題登録は終了致しました。ご登録ありがとうございました。
               </Typography>
             </Box>
           </Grid>
           <Grid item>
             <Grid container>
               <Grid item>
-                <Button variant="contained" size="large">
+                <Button variant="contained" size="large" disabled>
                   <Link
                     href="https://drive.google.com/uc?export=download&id=1iVKZytHb8DqxW73Yq-FzH_gP4mdnN4b3"
                     download="演題募集要項.pdf"
