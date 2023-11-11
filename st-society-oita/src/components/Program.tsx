@@ -104,6 +104,11 @@ function Program() {
               primaryTypographyProps={{
                 variant: "h4",
               }}
+              secondary="プログラムは変更の可能性があります。"
+              secondaryTypographyProps={{
+                color: "secondary",
+                variant: "h6",
+              }}
             />
           </Grid>
           <Grid item mb={1} md={12}>

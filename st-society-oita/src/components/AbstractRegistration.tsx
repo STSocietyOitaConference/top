@@ -35,11 +35,11 @@ function AbstractRegistration() {
         >
           <Grid item mb={"2vh"}>
             <ListItemText
-              primary="演題登録"
+              primary="演題登録採択結果"
               primaryTypographyProps={{
                 variant: "h4",
               }}
-              secondary="演題募集要項がダウンロードできます。"
+              secondary="演題登録採択結果がダウンロードできます。"
               secondaryTypographyProps={{
                 color: "secondary",
                 variant: "h6",
@@ -54,9 +54,6 @@ function AbstractRegistration() {
             alignItems="center" //左寄せよせの場合はflex-start
           >
             <Box>
-              <Typography variant="h6" color="secondary">
-                <s>演題登録期間：2023年6月１日(木)～10月31日(木)まで</s>
-              </Typography>
               <Typography variant="h6" color="primary" textAlign={"start"}>
                 演題登録は終了致しました。ご登録ありがとうございました。
               </Typography>
@@ -65,10 +62,10 @@ function AbstractRegistration() {
           <Grid item>
             <Grid container>
               <Grid item>
-                <Button variant="contained" size="large" disabled>
+                <Button variant="contained" size="large">
                   <Link
-                    href="https://drive.google.com/uc?export=download&id=1iVKZytHb8DqxW73Yq-FzH_gP4mdnN4b3"
-                    download="演題募集要項.pdf"
+                    href="https://drive.google.com/uc?export=download&id=1KVxmRo6vBsTAqGqAd-fIGwKv5S0kAw16"
+                    download="演題採択結果.numbers"
                     underline={"none"}
                   >
                     <Typography style={{ color: "white" }}>
