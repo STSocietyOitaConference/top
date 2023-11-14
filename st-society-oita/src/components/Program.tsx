@@ -100,14 +100,9 @@ function Program() {
         >
           <Grid id="title" item mb={1}>
             <ListItemText
-              primary="プログラム"
+              primary="講演内容"
               primaryTypographyProps={{
                 variant: "h4",
-              }}
-              secondary="プログラムは変更の可能性があります。"
-              secondaryTypographyProps={{
-                color: "secondary",
-                variant: "h6",
               }}
             />
           </Grid>

@@ -15,10 +15,8 @@ import { useInView } from "react-intersection-observer";
 import "animate.css";
 
 const dowonloadInfo = [
-  [
-    "展示・広告掲載 申込用紙",
-    "必要事項記載の上、FAXでお送りください。※期限：令和5年10月31日（木）",
-  ],
+  // ["スケジュール", "スケジュールは1部変更になる可能性があります"],
+  ["演題採択結果", "演題結果の一覧をダウンロードできます。"],
 ];
 function Downloads() {
   const { ref, inView } = useInView({
@@ -84,8 +82,8 @@ function Downloads() {
                             }}
                           >
                             <Link
-                              href="https://drive.google.com/uc?export=download&id=1wnIt0CCwJ91WPr8hgpdqSZ2TrFR1MfpN"
-                              download="展示・広告掲載 申込用紙.pdf"
+                              href="https://drive.google.com/uc?export=download&id=1WL-WKhNN52Md2UJkUhCNmRK_nIguZJun"
+                              download="演題採択結果.pdf"
                             >
                               <FileDownloadOutlinedIcon />
                             </Link>

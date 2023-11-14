@@ -1,6 +1,6 @@
 import React from "react";
 import ImageDialog from "../dialog/ImageDialog";
-import { Typography, Box, Grid } from "@mui/material";
+import { Box, Grid, ListItemText } from "@mui/material";
 import SchedulePdf from "../assets/schedule/timeSchedule.jpg";
 import { useInView } from "react-intersection-observer";
 import "animate.css";
@@ -26,16 +26,23 @@ function Schedule() {
         <Grid
           container
           flexDirection="column"
-          justifyContent="center"
+          textAlign="center"
           alignItems="center"
-          spacing={3}
-          mb={6}
+          sx={{ mx: "auto" }}
           className="animate__animated animate__fadeInUp"
         >
           <Grid item>
-            <Typography variant="h4" style={{ textAlign: "center" }} mb={3}>
-              スケジュール
-            </Typography>
+            <ListItemText
+              primary="スケジュール"
+              primaryTypographyProps={{
+                variant: "h4",
+              }}
+              secondary="スケジュールは1部変更になる可能性があります"
+              secondaryTypographyProps={{
+                color: "secondary",
+                variant: "h6",
+              }}
+            />
           </Grid>
           <Grid item>
             <Box>
