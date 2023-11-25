@@ -20,7 +20,7 @@ const Programs: LectureContent[] = [
     performerImage: Performer1,
     programInfo: [
       { textType: 0, text: "大会講演" },
-      { textType: 1, text: "言語聴覚療法の歴史を紡ぐ（仮）" },
+      { textType: 1, text: "わが国の言語聴覚療法の歴史を紡ぐ" },
 
       {
         textType: 3,
@@ -44,7 +44,10 @@ const Programs: LectureContent[] = [
     performerImage: Performer3,
     programInfo: [
       { textType: 0, text: "教育講演" },
-      { textType: 1, text: "事例を踏まえた小児構音障害へのアプローチ（仮）" },
+      {
+        textType: 1,
+        text: "小児構音の言語療法～アプローチポイントと連携を考える～",
+      },
       {
         textType: 3,
         text: "緒方 祐子（倉重こどもクリニック）",

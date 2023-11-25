@@ -1,7 +1,8 @@
 import React from "react";
 import { Typography, CardMedia, Grid, Link, Box } from "@mui/material";
 import Banner1 from "../assets/advertisement/banner_1.jpg";
-import SampleImage2 from "../assets/advertisement/banner_sample.png";
+import Banner2 from "../assets/advertisement/banner_2.jpg";
+import SampleImage2 from "../assets/advertisement/banner_sample.jpg";
 import { useInView } from "react-intersection-observer";
 import "animate.css";
 function Advertisement() {
@@ -17,9 +18,9 @@ function Advertisement() {
       url: "https://hane.in/",
     },
     {
-      name: "SampleImage",
-      image: SampleImage2,
-      url: "http://www.oita-st.com/",
+      name: "ヘルメット潜水株式会社",
+      image: Banner2,
+      url: "https://www.cloz.co.jp/",
     },
     {
       name: "SampleImage",

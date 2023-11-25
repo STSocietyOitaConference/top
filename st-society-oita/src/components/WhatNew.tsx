@@ -20,6 +20,7 @@ function formatDate(inputDate: any) {
   return formatday;
 }
 const informations = [
+  [formatDate(20231125), "当日のスケジュールが更新されました。"],
   [formatDate(20231111), "演題登録採択結果が公開されました。"],
   [
     formatDate(20231031),
