@@ -1,12 +1,5 @@
 import React from "react";
-import {
-  Typography,
-  ListItemText,
-  Button,
-  Link,
-  Grid,
-  Box,
-} from "@mui/material";
+import { Typography, ListItemText, Grid, Box } from "@mui/material";
 import { useInView } from "react-intersection-observer";
 import AbstRegistResult_0001 from "../assets/abstResult/abstResult_page-0001.jpg";
 import AbstRegistResult_0002 from "../assets/abstResult/abstResult_page-0002.jpg";
