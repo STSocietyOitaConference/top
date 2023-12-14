@@ -1,24 +1,15 @@
 import React from "react";
-import { Typography, ListItemText, Grid, Box } from "@mui/material";
+import {
+  Typography,
+  ListItemText,
+  Button,
+  Link,
+  Grid,
+  Box,
+} from "@mui/material";
 import { useInView } from "react-intersection-observer";
-import AbstRegistResult_0001 from "../assets/abstResult/abstResult_page-0001.jpg";
-import AbstRegistResult_0002 from "../assets/abstResult/abstResult_page-0002.jpg";
 import "animate.css";
-import ImageDialog from "../dialog/ImageDialog";
-export interface bookParam {
-  id: number;
-  image: string;
-}
-const bookList = [
-  {
-    id: 1,
-    image: AbstRegistResult_0001,
-  },
-  {
-    id: 2,
-    image: AbstRegistResult_0002,
-  },
-];
+
 function AbstractRegistration() {
   const { ref, inView } = useInView({
     // オプション
@@ -26,7 +17,12 @@ function AbstractRegistration() {
     triggerOnce: true, // 最初の一度だけ実行
   });
   return (
-    <div id="item_3" className="AbstractRegistration" ref={ref}>
+    <div
+      id="item_3"
+      className="AbstractRegistration"
+      style={{ maxHeight: "40vh" }}
+      ref={ref}
+    >
       {inView && (
         <Grid
           container
@@ -39,9 +35,14 @@ function AbstractRegistration() {
         >
           <Grid item mb={"2vh"}>
             <ListItemText
-              primary="演題登録採択結果"
+              primary="演題登録"
               primaryTypographyProps={{
                 variant: "h4",
+              }}
+              secondary="演題募集要項がダウンロードできます。"
+              secondaryTypographyProps={{
+                color: "secondary",
+                variant: "h6",
               }}
             />
           </Grid>
@@ -53,27 +54,30 @@ function AbstractRegistration() {
             alignItems="center" //左寄せよせの場合はflex-start
           >
             <Box>
+              <Typography variant="h6" color="secondary">
+                <s>演題登録期間：2023年6月１日(木)～10月31日(木)まで</s>
+              </Typography>
               <Typography variant="h6" color="primary" textAlign={"start"}>
                 演題登録は終了致しました。ご登録ありがとうございました。
               </Typography>
             </Box>
           </Grid>
           <Grid item>
-            <Box>
-              <Grid
-                container
-                direction="row"
-                justifyContent="space-evenly"
-                alignItems="center"
-                mx="auto"
-              >
-                {bookList.map((item, index) => (
-                  <Grid item key={index} xs={10} md={6}>
-                    <ImageDialog {...item} />
-                  </Grid>
-                ))}
+            <Grid container>
+              <Grid item>
+                <Button variant="contained" size="large">
+                  <Link
+                    href="https://drive.google.com/uc?export=download&id=1iVKZytHb8DqxW73Yq-FzH_gP4mdnN4b3"
+                    download="演題募集要項.pdf"
+                    underline={"none"}
+                  >
+                    <Typography style={{ color: "white" }}>
+                      ダウンロード
+                    </Typography>
+                  </Link>
+                </Button>
               </Grid>
-            </Box>
+            </Grid>
           </Grid>
         </Grid>
       )}

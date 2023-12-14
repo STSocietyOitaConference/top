@@ -9,6 +9,7 @@ import Schedule from "./components/Schedule";
 import Registration from "./components/Registration";
 import Downloads from "./components/Downloads";
 import AbstractRegistration from "./components/AbstractRegistration";
+import AbstractRegistResult from "./components/AbstractRegistResult";
 import Inquiry from "./components/Inquiry";
 import Advertisement from "./components/Advertisement";
 import InstagramIcon from "@mui/icons-material/Instagram";
@@ -58,6 +59,7 @@ function Main(props: Props) {
           "プログラム", // id:4
           "スケジュール", // id:5
           "参加登録", // id:6
+          "演題募集要項", // id:7
           "演題登録採択結果", // id:7
           "各種ダウンロード", // id:8
           "問い合わせ", // id:9
@@ -237,6 +239,9 @@ function Main(props: Props) {
               </Grid>
               <Grid item>
                 <AbstractRegistration />
+              </Grid>
+              <Grid item>
+                <AbstractRegistResult />
               </Grid>
               <Grid item>
                 <Downloads />

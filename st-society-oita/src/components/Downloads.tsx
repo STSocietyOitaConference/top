@@ -23,13 +23,13 @@ const dowonloadInfo = [
   [
     "スケジュール",
     "変更になる可能性があります",
-    "https://drive.google.com/uc?export=download&id=1iZdTQvjA-vn4LybZzrLt1byIqFPIVD69",
+    "https://drive.google.com/uc?export=download&id=1PcVoOo3moH1dis7vsdhiIzAyrnT0f8Qo",
     "スケジュール.pdf",
   ],
   [
     "演題採択結果",
     "演題結果の一覧をダウンロードできます。",
-    "https://drive.google.com/uc?export=download&id=1WL-WKhNN52Md2UJkUhCNmRK_nIguZJun",
+    "https://drive.google.com/uc?export=download&id=1J0FvTOybfKQk3HyD9y4YA4OYEhnSly2Z",
     "演題採択結果.pdf",
   ],
 ];
