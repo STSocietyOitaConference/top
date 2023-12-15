@@ -2,6 +2,7 @@ import React from "react";
 import { Typography, CardMedia, Grid, Link, Box } from "@mui/material";
 import Banner1 from "../assets/advertisement/banner_1.jpg";
 import Banner2 from "../assets/advertisement/banner_2.jpg";
+import Banner3 from "../assets/advertisement/banner_3.jpg";
 import SampleImage2 from "../assets/advertisement/banner_sample.jpg";
 import { useInView } from "react-intersection-observer";
 import "animate.css";
@@ -23,9 +24,9 @@ function Advertisement() {
       url: "https://www.cloz.co.jp/",
     },
     {
-      name: "SampleImage",
-      image: SampleImage2,
-      url: "http://www.oita-st.com/",
+      name: "フードケア",
+      image: Banner3,
+      url: "https://www.food-care.co.jp/",
     },
     {
       name: "SampleImage",
