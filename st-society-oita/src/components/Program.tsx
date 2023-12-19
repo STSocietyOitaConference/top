@@ -32,7 +32,7 @@ const Programs: LectureContent[] = [
     performerImage: Performer2,
     programInfo: [
       { textType: 0, text: "教育講演" },
-      { textType: 1, text: "発声・発語領域の最新の知見（仮）" },
+      { textType: 1, text: "発声発語を診るための課題とその臨床活用" },
 
       {
         textType: 3,
