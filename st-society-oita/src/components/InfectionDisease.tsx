@@ -53,7 +53,7 @@ function AbstractRegistration() {
                 <Grid item>
                   <Box id="bullet">
                     <Grid container textAlign="start">
-                      <Grid item xs={2} sm={4} md={1}>
+                      <Grid item xs={1} sm={1} md={1}>
                         <Typography
                           variant="h6"
                           color="secondary"
@@ -62,21 +62,21 @@ function AbstractRegistration() {
                           （1）
                         </Typography>
                       </Grid>
-                      <Grid item xs={2} sm={4} md={11}>
+                      <Grid item xs={11} sm={4} md={11}>
                         <Typography
                           variant="h6"
                           color="secondary"
                           textAlign={"start"}
                         >
                           発熱（37.5度以上）、体調不良・倦怠感のある方は参加をご遠慮ください。
-                          ※登壇予定がある場合には学会事務局メールまでご連絡ください。
+                          登壇予定がある場合には学会事務局メールまでご連絡ください。
                         </Typography>
                       </Grid>
                     </Grid>
                   </Box>
                 </Grid>
                 <Grid container textAlign="start">
-                  <Grid item xs={2} sm={4} md={1}>
+                  <Grid item xs={1} sm={1} md={1}>
                     <Typography
                       variant="h6"
                       color="secondary"
@@ -85,7 +85,7 @@ function AbstractRegistration() {
                       （2）
                     </Typography>
                   </Grid>
-                  <Grid item xs={2} sm={4} md={11}>
+                  <Grid item xs={11} sm={11} md={11}>
                     <Typography
                       variant="h6"
                       color="secondary"
