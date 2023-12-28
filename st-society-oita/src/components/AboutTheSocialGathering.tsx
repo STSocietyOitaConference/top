@@ -21,7 +21,7 @@ function AboutTheSocialGathering() {
     triggerOnce: true, // 最初の一度だけ実行
   });
   return (
-    <Box className="Schedule" id="item_5" ref={ref} mb={10}>
+    <Box className="Schedule" id="item_7" ref={ref} mb={10}>
       {inView && (
         <Grid
           container

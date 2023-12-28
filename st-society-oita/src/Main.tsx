@@ -11,6 +11,7 @@ import Downloads from "./components/Downloads";
 import AbstractRegistration from "./components/AbstractRegistration";
 import AbstractRegistResult from "./components/AbstractRegistResult";
 import AboutTheSocialGathering from "./components/AboutTheSocialGathering";
+import InfectionDisease from "./components/InfectionDisease";
 import Inquiry from "./components/Inquiry";
 import Advertisement from "./components/Advertisement";
 import InstagramIcon from "@mui/icons-material/Instagram";
@@ -63,6 +64,7 @@ function Main(props: Props) {
           "演題登録", // id:7
           "演題登録採択結果", // id:7
           "懇親会について", // id:7
+          "感染症対策について", // id:7
           "各種ダウンロード", // id:8
           "問い合わせ", // id:9
           "広告", // id:10
@@ -230,7 +232,7 @@ function Main(props: Props) {
               {/* <Grid item xs={2} sm={4} md={4}>
                 <Summary />
               </Grid> */}
-              <Grid item xs={2} sm={4} md={4} mb={6}>
+              <Grid item xs={2} sm={4} md={4}>
                 <Program />
               </Grid>
               <Grid item xs={2} sm={4} md={4}>
@@ -239,22 +241,25 @@ function Main(props: Props) {
               <Grid item xs={2} sm={4} md={4}>
                 <Registration />
               </Grid>
-              <Grid item>
+              <Grid item xs={2} sm={4} md={4}>
                 <AbstractRegistration />
               </Grid>
-              <Grid item>
+              <Grid item xs={2} sm={4} md={4}>
                 <AbstractRegistResult />
               </Grid>
-              <Grid item>
+              <Grid item xs={2} sm={4} md={4}>
                 <AboutTheSocialGathering />
               </Grid>
-              <Grid item>
+              <Grid item xs={2} sm={4} md={4}>
+                <InfectionDisease />
+              </Grid>
+              <Grid item xs={2} sm={4} md={4}>
                 <Downloads />
               </Grid>
-              <Grid item mb={12}>
+              <Grid item mb={12} xs={2} sm={4} md={4}>
                 <Inquiry />
               </Grid>
-              <Grid item>
+              <Grid item xs={2} sm={4} md={4}>
                 <Advertisement />
               </Grid>
             </Grid>

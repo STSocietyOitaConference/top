@@ -26,7 +26,7 @@ function AbstractRegistResult() {
     triggerOnce: true, // 最初の一度だけ実行
   });
   return (
-    <div id="item_3" className="AbstractRegistResult" ref={ref}>
+    <div id="item_6" className="AbstractRegistResult" ref={ref}>
       {inView && (
         <Grid
           container

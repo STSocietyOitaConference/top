@@ -28,26 +28,11 @@ function Advertisement() {
       image: Banner3,
       url: "https://www.food-care.co.jp/",
     },
-    {
-      name: "SampleImage",
-      image: SampleImage2,
-      url: "http://www.oita-st.com/",
-    },
-    {
-      name: "SampleImage",
-      image: SampleImage2,
-      url: "http://www.oita-st.com/",
-    },
-    {
-      name: "SampleImage",
-      image: SampleImage2,
-      url: "http://www.oita-st.com/",
-    },
   ];
   return (
     <Box className="Advertisement" ref={ref}>
       <Grid
-        id="item_7"
+        id="item_10"
         container
         flexDirection={"column"}
         alignItems="center"

@@ -21,7 +21,7 @@ function Schedule() {
     triggerOnce: true, // 最初の一度だけ実行
   });
   return (
-    <Box className="Schedule" id="item_5" ref={ref}>
+    <Box className="Schedule" id="item_3" ref={ref}>
       {inView && (
         <Grid
           container
