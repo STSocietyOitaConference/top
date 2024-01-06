@@ -1,5 +1,5 @@
 import React from "react";
-import { useInView } from "react-intersection-observer";
+
 import "animate.css";
 import {
   Typography,
@@ -20,6 +20,7 @@ function formatDate(inputDate: any) {
   return formatday;
 }
 const informations = [
+  [formatDate(20240104), "参加登録期間が変更になりました。"],
   [formatDate(20231125), "当日のスケジュールが更新されました。"],
   [formatDate(20231111), "演題登録採択結果が公開されました。"],
   [
@@ -35,11 +36,6 @@ const informations = [
   [formatDate(20230601), "ホームページを公開いたしました。"],
 ];
 function WhatNew() {
-  const { ref } = useInView({
-    // オプション
-    rootMargin: "-200px", // ref要素が現れてから50px過ぎたら
-    triggerOnce: true, // 最初の一度だけ実行
-  });
   const myStyleList = {
     MuiCssBaseline: {
       styleOverrides: `
@@ -54,7 +50,7 @@ function WhatNew() {
     },
   };
   return (
-    <Box className="WhatNew" ref={ref}>
+    <Box className="WhatNew">
       <Grid
         container
         direction="column"

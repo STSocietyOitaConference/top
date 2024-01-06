@@ -11,7 +11,6 @@ import {
   Link,
 } from "@mui/material";
 import FileDownloadOutlinedIcon from "@mui/icons-material/FileDownloadOutlined";
-import { useInView } from "react-intersection-observer";
 import "animate.css";
 const dowonloadInfo = [
   [
@@ -34,13 +33,8 @@ const dowonloadInfo = [
   ],
 ];
 function Downloads() {
-  const { ref, inView } = useInView({
-    // オプション
-    rootMargin: "-50px", // ref要素が現れてから50px過ぎたら
-    triggerOnce: true, // 最初の一度だけ実行
-  });
   return (
-    <Box id="item_9" ref={ref} className="Downloads anchor">
+    <Box id="item_9" className="Downloads anchor">
       <Grid
         className="animate__animated animate__fadeInUp"
         container
@@ -50,11 +44,9 @@ function Downloads() {
         mb={20}
       >
         <Grid item>
-          {inView && (
-            <Typography variant="h4" align="center" mb={3}>
-              各種ダウンロード
-            </Typography>
-          )}
+          <Typography variant="h4" align="center" mb={3}>
+            各種ダウンロード
+          </Typography>
         </Grid>
         <Grid item>
           <Box id="contents" component={"div"}>

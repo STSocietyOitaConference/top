@@ -3,15 +3,8 @@ import { Typography, CardMedia, Grid, Link, Box } from "@mui/material";
 import Banner1 from "../assets/advertisement/banner_1.jpg";
 import Banner2 from "../assets/advertisement/banner_2.jpg";
 import Banner3 from "../assets/advertisement/banner_3.jpg";
-import SampleImage2 from "../assets/advertisement/banner_sample.jpg";
-import { useInView } from "react-intersection-observer";
 import "animate.css";
 function Advertisement() {
-  const { ref } = useInView({
-    // オプション
-    rootMargin: "-50px", // ref要素が現れてから50px過ぎたら
-    triggerOnce: true, // 最初の一度だけ実行
-  });
   const adList = [
     {
       name: "玖珠郡医師会立老人保健施設 はね",
@@ -30,7 +23,7 @@ function Advertisement() {
     },
   ];
   return (
-    <Box className="Advertisement" ref={ref}>
+    <Box className="Advertisement">
       <Grid
         id="item_10"
         container

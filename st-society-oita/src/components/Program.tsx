@@ -1,6 +1,5 @@
 import React from "react";
 import { ListItemText, Grid, CardMedia, Typography } from "@mui/material";
-import { useInView } from "react-intersection-observer";
 import "animate.css";
 import { Box } from "@mui/system";
 import Performer1 from "../assets/program/hujita_ikuyo.png";
@@ -84,71 +83,64 @@ const MoldingText = (textType: number, text: string): JSX.Element => {
 };
 
 function Program() {
-  const { ref, inView } = useInView({
-    // オプション
-    rootMargin: "-50px", // ref要素が現れてから50px過ぎたら
-    triggerOnce: true, // 最初の一度だけ実行
-  });
   return (
-    <Box component="div" id="item_2" className="program" ref={ref}>
-      {inView && (
-        <Grid
-          id="program_container"
-          container
-          flexDirection="column"
-          textAlign="center"
-          alignItems="center"
-          sx={{ mx: "auto" }}
-          className="animate__animated animate__fadeInUp"
-        >
-          <Grid id="title" item mb={1}>
-            <ListItemText
-              primary="講演内容"
-              primaryTypographyProps={{
-                variant: "h4",
-              }}
-            />
-          </Grid>
-          <Grid item mb={1} md={12}>
-            <Box
-              sx={{
-                width: { xs: "380px", md: "700px" },
-              }}
-            >
-              {Programs.map((infos, _programIndex) => {
-                return (
-                  <Grid container textAlign={"left"} key={_programIndex} mb={3}>
-                    <Grid id="performer" item xs={2} md={2} pt={1}>
-                      <CardMedia
-                        component="img"
-                        image={infos.performerImage}
-                        title="演者画像"
-                        sx={{
-                          height: { xs: "50px", md: "80px" },
-                          width: { xs: "50px", md: "80px" },
-                        }}
-                      />
-                    </Grid>
-                    <Grid id="lecture_content" item xs={10} md={10}>
-                      <Box component={"div"}>
-                        {infos.programInfo.map(
-                          (info: Record, _infoIndex: number) => {
-                            return (
-                              <Box key={_infoIndex}>
-                                {MoldingText(info.textType, info.text)}
-                              </Box>
-                            );
-                          }
-                        )}
-                      </Box>
-                    </Grid>
-                  </Grid>
-                );
-              })}
-            </Box>
-          </Grid>
+    <Box component="div" id="item_2" className="program">
+      <Grid
+        id="program_container"
+        container
+        flexDirection="column"
+        textAlign="center"
+        alignItems="center"
+        sx={{ mx: "auto" }}
+        className="animate__animated animate__fadeInUp"
+      >
+        <Grid id="title" item mb={1}>
+          <ListItemText
+            primary="講演内容"
+            primaryTypographyProps={{
+              variant: "h4",
+            }}
+          />
         </Grid>
-      )}
+        <Grid item mb={1} md={12}>
+          <Box
+            sx={{
+              width: { xs: "380px", md: "700px" },
+            }}
+          >
+            {Programs.map((infos, _programIndex) => {
+              return (
+                <Grid container textAlign={"left"} key={_programIndex} mb={3}>
+                  <Grid id="performer" item xs={2} md={2} pt={1}>
+                    <CardMedia
+                      component="img"
+                      image={infos.performerImage}
+                      title="演者画像"
+                      sx={{
+                        height: { xs: "50px", md: "80px" },
+                        width: { xs: "50px", md: "80px" },
+                      }}
+                    />
+                  </Grid>
+                  <Grid id="lecture_content" item xs={10} md={10}>
+                    <Box component={"div"}>
+                      {infos.programInfo.map(
+                        (info: Record, _infoIndex: number) => {
+                          return (
+                            <Box key={_infoIndex}>
+                              {MoldingText(info.textType, info.text)}
+                            </Box>
+                          );
+                        }
+                      )}
+                    </Box>
+                  </Grid>
+                </Grid>
+              );
+            })}
+          </Box>
+        </Grid>
+      </Grid>
     </Box>
   );
 }
