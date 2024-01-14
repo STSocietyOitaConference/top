@@ -59,7 +59,7 @@ function Registration() {
                   sx={{ marginRight: "3vw" }}
                 >
                   <Link
-                    href="https://drive.google.com/uc?export=download&id=1fC5YrSNjdrEN1kX6OfyVqDmUcdn5Uqyg"
+                    href="https://drive.google.com/uc?export=download&id=1tJBljSHAUuKdiG10KvMSmYDb6a7oJ29h"
                     download="演題募集要項.pdf"
                     underline={"none"}
                   >

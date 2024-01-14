@@ -1,15 +1,15 @@
 import React from "react";
 import Title from "./components/Title";
 import WhatNew from "./components/WhatNew";
-import IntroVideo from "./components/IntroVideo";
 import Greeting from "./components/Greeting";
-import Summary from "./components/Summary";
 import Program from "./components/Program";
 import Schedule from "./components/Schedule";
 import Registration from "./components/Registration";
+import PresentationOrder from "./components/PresentationOrder";
 import Downloads from "./components/Downloads";
 import AbstractRegistration from "./components/AbstractRegistration";
 import AbstractRegistResult from "./components/AbstractRegistResult";
+import Cloakroom from "./components/Cloakroom";
 import AboutTheSocialGathering from "./components/AboutTheSocialGathering";
 import InfectionDisease from "./components/InfectionDisease";
 import Inquiry from "./components/Inquiry";
@@ -62,7 +62,9 @@ function Main(props: Props) {
           "スケジュール", // id:5
           "参加登録", // id:6
           "演題登録", // id:7
+          "発表順番", // id:7
           "演題登録採択結果", // id:7
+          "クローク", // id:7
           "懇親会について", // id:7
           "感染症対策について", // id:7
           "各種ダウンロード", // id:8
@@ -242,10 +244,16 @@ function Main(props: Props) {
                 <Registration />
               </Grid>
               <Grid item xs={2} sm={4} md={4}>
+                <PresentationOrder />
+              </Grid>
+              <Grid item xs={2} sm={4} md={4}>
                 <AbstractRegistration />
               </Grid>
               <Grid item xs={2} sm={4} md={4}>
                 <AbstractRegistResult />
+              </Grid>
+              <Grid item xs={2} sm={4} md={4}>
+                <Cloakroom />
               </Grid>
               <Grid item xs={2} sm={4} md={4}>
                 <AboutTheSocialGathering />
