@@ -17,12 +17,12 @@ const dowonloadInfo = [
     "参加登録申込書",
     "案内のダウンロードができます。",
     "https://drive.google.com/uc?export=download&id=1tJBljSHAUuKdiG10KvMSmYDb6a7oJ29h",
-    "スケジュール.pdf",
+    "参加登録申込書.pdf",
   ],
   [
     "スケジュール",
     "変更になる可能性があります",
-    "https://drive.google.com/uc?export=download&id=1PcVoOo3moH1dis7vsdhiIzAyrnT0f8Qo",
+    "https://drive.google.com/uc?export=download&id=15STn7xIipKyUNtoSnB8CJsDTPY8FZ2E8",
     "スケジュール.pdf",
   ],
   [

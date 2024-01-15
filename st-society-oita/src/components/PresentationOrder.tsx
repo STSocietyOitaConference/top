@@ -44,7 +44,7 @@ function PresentationOrder() {
               <Button variant="contained" size="large">
                 <Link
                   href="https://drive.google.com/uc?export=download&id=1Qqsa41UBNpBEx2gCsnVGCwt3vxa2WkfO"
-                  download="演題募集要項.pdf"
+                  download="発表順番.pdf"
                   underline={"none"}
                 >
                   <Typography style={{ color: "white" }}>
